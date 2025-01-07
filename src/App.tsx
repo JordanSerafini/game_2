@@ -2,12 +2,12 @@ import { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
-import { Spider } from "./components/Spider";
+import Spider from "./components/Spider";
 import Ground from "./components/Ground";
 // import Mountains from "./components/Mountains";
 import Rocks from "./components/Rocks";
 import Trees from "./components/Trees";
-import River from "./components/River";
+// import River from "./components/River";
 // import CameraController from "./components/CameraController";
 
 const App: React.FC = () => {
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Rocks />
         {/* <Mountains /> */}
         <Trees />
-        <River />
+        {/* <River /> */}
         <Spider
           onPositionChange={(position: [number, number, number]) => {
             spiderPosition.current = position;
